@@ -2,6 +2,12 @@ var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var config = require('./webpack.config');
 
+if(process.argv[2]){
+  config = require('./webpack.production.config');
+} else {
+  config = require('./webpack.config');
+}
+
 new WebpackDevServer(webpack(config), {
     publicPath: config.output.publicPath,
     hot: true,
