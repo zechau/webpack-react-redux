@@ -6,10 +6,10 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import { AppContainer } from 'react-hot-loader';
 import configureStore from './system/configureStore';
 import Root from './system/Root';
+import './styles/main.scss';
 
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
-
 
 render(
     <AppContainer>

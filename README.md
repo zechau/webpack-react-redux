@@ -56,3 +56,11 @@ I went ahead and wrote a detailed series of posts on this project for you. I hop
 
 ## Why doesn't it have async?
 To keep it unopinionated. You choose what async library you want. If you want to check out a full example with async in it, check this simple [todo-app](https://github.com/jpsierens/todo-app) that uses redux-sagas.
+
+##steps of creating a new app
+1. In actions directory, create redux actions in index.js file. Define your action types in types.js file.
+2.Create reducers and combine them in index.js file in reducers directory
+3.You can choose to create initial state in store directory.
+4.create components in components directory, and create redux container in containers directory
+5.add route in routes.js
+that's all!

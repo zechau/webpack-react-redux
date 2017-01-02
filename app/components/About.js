@@ -5,5 +5,4 @@ const About = () =>
         Just a dummy page to showcase react-router!
     </div>;
 
-
 export default About;
